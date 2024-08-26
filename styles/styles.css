@@ -19,11 +19,14 @@ body {
     font-family: var(--fuente-Inter);
     box-sizing: border-box;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
 .header{ 
-    position: absolute; 
+    position: absolute;
     margin: 2.5rem 0 0  2.5rem;
     width: 50%;
 }
@@ -177,14 +180,17 @@ footer{
 
 @media (min-width: 1440px) {
 
+    .header{
+    left: 0;
+    }
+
     .main{
         width: 1440px;
         height: 95vh;
-        align-items: center;
     }
     
     .presentacion__ingreso__texto{
-        height: 50vh;
+        height: auto;
     }
   
 }
