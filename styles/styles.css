@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-primario: #F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terciario: #D8DFE8;
+    --color-cuaternario: #FFFFFF;
+
+    --fuente-Inter:  "Inter", sans-serif ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:var(--color-primario);
+    font-family: var(--fuente-Inter);
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+
+.header{ 
+    position: absolute; 
+    margin: 2.5rem 0 0  2.5rem;
+    width: 50%;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.presentacion__ingreso__texto{
+   
+    width: 50%;
+    height: auto;
+    margin: 10% 0 0% 15%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /*  background-color: blue;*/
+}
+
+.presentacion__parrafo {
+    width: 100%;
+    height: 100%;
+    
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-secundario);
+    line-height: 150%;
+    background-color: transparent; 
+    border: none;
+    
+    resize: none;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    outline: none;
+}
+
+.presentacion__parrafo::placeholder{ 
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-secundario);
+    line-height: 150%;
+}
+
+.presentacion__botones{
+    margin: 0 0 5% 0;
+}
+
+.presentacion__botones_alerta{
+    margin: 0 0 1rem 0;
+    display: flex;
+    align-items: center; 
+    font-size: 0.75rem;
+    gap: 1%;
+}
+
+.presentacion__botones__accion{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.boton__e{
+    width: 20.5rem;
+    background-color:var(--color-secundario);
+    color: var(--color-cuaternario);
+    border: 1px solid var(--color-secundario);
+    border-radius: 1.5rem;
+    font-family: var(--fuente-Inter);
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.boton__d{
+    width: 20.5rem;
+    background-color:var(--color-cuaternario);
+    color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+    border-radius: 1.5rem;
+    font-family: var(--fuente-Inter);
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.presentacion__mostrar__texto{ 
+    background-color: var(--color-cuaternario);
+    margin: 2%;
+    width: 30%;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 25px 50px 1px rgba(0, 0, 0, 0.05);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.presentacion__mostrar__texto__parrafo{
+
+    height: auto;
+    padding: 2rem;
+    font-family: var(--fuente-Inter);
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 150%;
+
+}
+
+.button__copiar{
+    display: none;
+    width: auto;
+    margin: 0 2rem 2rem 2rem;
+    padding: 1rem 0;
+    border: 1px solid var(--color-secundario);
+    border-radius: 24px; 
+    background-color: var(--color-cuaternario);
+    font-family: var(--fuente-Inter);
+    font-size: 1rem;
+    color: var(--color-secundario);
+}
+
+footer{
+    width: 100%;
+    background-color: var(--color-secundario);
+    padding: 1rem 0;
+    font-family: var(--fuente-Inter);
+    color: var(--color-cuaternario);
+    text-align: end;
+}
+
+.pie_pagina__parrafo{
+    margin-right: 3%;
+}
+
+
+
+.boton__d:hover{
+    background-color:#EFF1FA;
+}
+
+.button__copiar:hover{
+    background-color:#EFF1FA;
+}
+
+.boton__e:hover{
+    background-color:#072B61;
+}
+
+@media (min-width: 1440px) {
+
+    .main{
+        width: 1440px;
+        height: 95vh;
+        align-items: center;
+    }
+    
+    .presentacion__ingreso__texto{
+        height: 50vh;
+    }
+  
+}
+
+
+@media (max-width: 1440px) {
+
+    .main{
+        width: 100%;
+        height: 95vh;
+    }
+
+    .presentacion__mostrar__texto{
+        height: auto;
+    }
+  
+}
+
+@media (max-width: 768px){
+
+    .imagen__muñeco{
+        display: none;
+    }
+
+    .header{
+        width: 100%;
+        padding: 10% 0;
+        margin: 0; 
+        position: relative;
+        
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .presentacion__ingreso__texto{
+        width: auto;
+        height: 60%;
+        margin: 0% 5% 0 5%;
+    }
+
+    .presentacion__mostrar__texto{
+        width: auto;
+        margin: 5%;
+    }
+  
+}
+
+
+@media (max-width: 375px){
+
+    .presentacion__ingreso__texto{
+        width: auto;
+        height: 50%;
+    }
+
+    .presentacion__botones__accion{
+        display: flex;
+        flex-direction: column;
+    }
+    .boton__d{
+        background-color: aqua;
+    }
+}
+
