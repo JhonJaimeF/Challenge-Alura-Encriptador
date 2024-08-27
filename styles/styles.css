@@ -129,7 +129,6 @@ body {
 }
 
 .presentacion__mostrar__texto__parrafo{
-
     height: auto;
     padding: 2rem;
     font-family: var(--fuente-Inter);
@@ -137,7 +136,6 @@ body {
     font-weight: 300;
     line-height: 150%;
     text-align: center;
-
 }
 
 .button__copiar{
